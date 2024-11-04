@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'widget/takepicture_screen.dart';
+import 'widget/filter_carousel.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -9,9 +10,7 @@ Future<void> main() async {
 
   runApp(MaterialApp(
     theme: ThemeData.dark(),
-    home: TakepictureScreen(
-      camera: firstCamera,
-    ),
+    home: PhotoFilterCarousel(),
     debugShowCheckedModeBanner: false,
   ));
 }
